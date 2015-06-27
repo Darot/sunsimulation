@@ -4,6 +4,7 @@ module.exports = function(config) {
  
     files: [
         'test/*.js',
+        'js/SunPositionCalc.js',
         'node_modules/suncalc/suncalc.js'
     ]
   });
