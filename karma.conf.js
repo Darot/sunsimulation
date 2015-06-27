@@ -3,7 +3,8 @@ module.exports = function(config) {
     frameworks: ['jasmine'],
  
     files: [
-      '*Test.js'
+        'test/*.js',
+        'node_modules/suncalc/suncalc.js'
     ]
   });
 };
