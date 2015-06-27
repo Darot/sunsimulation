@@ -1,3 +1,7 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
 a {
   color: #000000;
   box-sizing: border-box; }
