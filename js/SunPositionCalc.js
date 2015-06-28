@@ -24,3 +24,15 @@ SunCalcCartesian.getY = function (date, lat, lng) {
     var y = 125 * sin(altitude);
     return y;
 };
+
+SunCalcCartesian.getAll = function (date, lat, lng) {
+    var x = this.getX(date, lat, lng);
+    var y = this.getY(date, lat, lng);
+    var z = this.getZ(date, lat, lng);
+
+    return {
+        x: x,
+        y: y,
+        z: z
+    };
+}
