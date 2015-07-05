@@ -9,19 +9,19 @@ var SunCalcCartesian = {};
 
 SunCalcCartesian.getZ = function (date, lat, lng){
     var spheric = SunCalc.getPosition(date, lat, lng);
-    var z =  125 * cos(spheric.altitude) * cos(spheric.azimuth);
+    var z =  400 * cos(spheric.altitude) * cos(spheric.azimuth);
     return z;
 };
 
 SunCalcCartesian.getX = function (date, lat, lng) {
     var spheric = SunCalc.getPosition(date, lat, lng);
-    var x = 125 * cos(spheric.altitude) * sin(spheric.azimuth);
+    var x = 400 * cos(spheric.altitude) * sin(spheric.azimuth);
     return x;
 };
 
 SunCalcCartesian.getY = function (date, lat, lng) {
     var altitude = SunCalc.getPosition(date, lat, lng).altitude;
-    var y = 125 * sin(altitude);
+    var y = 400 * sin(altitude);
     return y;
 };
 
